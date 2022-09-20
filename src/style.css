@@ -60,4 +60,9 @@ body {
 .note p {
   font-size: 22px;
   font-weight: bolder;
+  color: var(--secondary-color);
+}
+
+.note span {
+  color: #575757;
 }
