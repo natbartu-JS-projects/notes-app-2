@@ -46,9 +46,18 @@ body {
   font-size: 40px;
 }
 
+#plusIcon {
+  color: var(--secondary-color);
+}
+
 .add-box p {
   margin-top: 20px;
   color: var(--secondary-color);
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 20px;
+}
+
+.note p {
+  font-size: 22px;
+  font-weight: bolder;
 }
