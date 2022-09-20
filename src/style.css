@@ -7,3 +7,8 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
+li::marker {
+  content: '';
+  display: none;
+}
