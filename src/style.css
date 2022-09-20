@@ -12,11 +12,6 @@ body {
   background-color: aqua;
 }
 
-li::marker {
-  content: '';
-  display: none;
-}
-
 .wrapper {
  margin: 50px;
  display: grid;
@@ -30,4 +25,19 @@ li::marker {
   background-color: #fff;
   border-radius: 5px;
   padding: 15px 20px 20px;
+}
+
+.add-box, .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-box .icon {
+  border: 2px dashed aqua;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
 }
