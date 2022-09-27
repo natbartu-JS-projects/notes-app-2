@@ -88,7 +88,7 @@ body {
 
 .note span {
   display: block;
-  margin-top: 7px;
+  margin-top: 5px;
   color: var(--third-color);
   font-size: 16px;
 }
@@ -101,6 +101,10 @@ body {
 .bottom-content span {
   color: var(--secondary-color);
   font-size: 14px;
+}
+
+.bottom-content .settings {
+  position: relative;
 }
 
 .bottom-content .settings i {
