@@ -4,6 +4,7 @@
   --main-color: #00ffff;
   --secondary-color:#ff00f28a;
   --third-color: #575757;
+  --background-color: #fff;
 } 
 
 * {
@@ -27,7 +28,7 @@ body {
 .wrapper li {
   height: 250px;
   list-style: none;
-  background-color: #fff;
+  background-color: var(--background-color);
   border-radius: 5px;
   padding: 15px 20px 20px;
 }
@@ -111,4 +112,43 @@ body {
   color: var(--third-color);
   font-size: 15px;
   cursor: pointer;
+}
+
+.settings .menu {
+  z-index: 1;
+  bottom: 0;
+  right: -5px;
+  padding: 5px 0;
+  background: var(--background-color);
+  position: absolute;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: bottom right;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.settings .show .menu {
+  transform: scale(1);
+}
+
+.settings .menu li {
+  height: 25px;
+  font-size: 15px;
+  margin-bottom: 2px;
+  padding: 17px 15px;
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 0;
+  justify-content: flex-start;  
+}
+
+.menu li:last-child{
+  margin-bottom: 0;
+}
+.menu li:hover{
+  background: var(--background-color);
+}
+.menu li i{
+  padding-right: 8px;
 }
